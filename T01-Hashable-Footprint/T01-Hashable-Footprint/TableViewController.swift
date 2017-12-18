@@ -50,17 +50,15 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         title = "Footprint"
-        
+
         let dataSource = TableViewControllerDataSource(cities: [], selectedCitiesSet: [], owner: self)
-        
         store = Store<State, Action, Command>(reducer: reducer, inititalState: State(dataSource: dataSource))
         store.subscribe { [weak self] (state, previousState, command) in
             self?.stateDidChanged(state: state, previousState: previousState, command: command)
         }
-        stateDidChanged(state: store.state, previousState: nil, command: nil)
         
+        stateDidChanged(state: store.state, previousState: nil, command: nil)
         store.dispatch(.loadCities)
     }
     
