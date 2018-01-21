@@ -8,22 +8,6 @@
 
 import Foundation
 
-public struct Listener<T>: Hashable {
-    
-    let key: String
-    
-    public typealias Action = (T) -> Void
-    let action: Action
-    
-    public var hashValue: Int {
-        return key.hashValue
-    }
-    
-    public static func ==(lhs: Listener<T>, rhs: Listener<T>) -> Bool {
-        return lhs.key == rhs.key
-    }
-}
-
 final public class Box<T> {
     
     public var value: T {
@@ -55,4 +39,26 @@ final public class CoolUserDefaults {
             defaults.set(data, forKey: dataKey)
         }
     }()
+    
+    public class func cleanAllUserDefaults() {
+        
+        do {
+            data.value = nil
+            // others...
+        }
+        
+        // reset suite
+        
+        let dict = defaults.dictionaryRepresentation()
+        dict.keys.forEach({
+            defaults.removeObject(forKey: $0)
+        })
+        defaults.synchronize()
+        
+        // reset standardUserDefaults
+        
+        let standardUserDefaults = UserDefaults.standard
+        standardUserDefaults.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+        standardUserDefaults.synchronize()
+    }
 }
