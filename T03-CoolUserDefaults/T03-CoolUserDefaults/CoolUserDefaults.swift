@@ -8,7 +8,7 @@
 
 import Foundation
 
-final public class Box<T> {
+final public class UserDefaultsBox<T> {
     
     public var value: T {
         didSet {
@@ -32,10 +32,10 @@ final public class CoolUserDefaults {
     static let defaults = UserDefaults(suiteName: "cool.user.defaults")!
     
     /// User Data
-    public static var data: Box<String?> = {
+    public static var data: UserDefaultsBox<String?> = {
         let data = defaults.string(forKey: dataKey)
         
-        return Box<String?>(data) { data in
+        return UserDefaultsBox<String?>(data) { data in
             defaults.set(data, forKey: dataKey)
         }
     }()
