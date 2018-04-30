@@ -13,3 +13,7 @@ Project-02 [Iterator-Bidirectional](https://github.com/wiiale/AdvancedSwiftThink
 Project-03 [CoolUserDefaults](https://github.com/wiiale/AdvancedSwiftThinker/tree/master/T03-CoolUserDefaults)
 
 ![](https://github.com/wiiale/AdvancedSwiftThinker/blob/master/T03-CoolUserDefaults/CoolUserDefaults.gif)
+
+Project-04 [KeyPath-KVO](https://github.com/wiiale/AdvancedSwiftThinker/tree/master/T04-KeyPath-KVO)
+![](https://github.com/wiiale/AdvancedSwiftThinker/blob/master/T04-KeyPath-KVO/KVO.gif)
+
