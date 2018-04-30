@@ -15,5 +15,6 @@ Project-03 [CoolUserDefaults](https://github.com/wiiale/AdvancedSwiftThinker/tre
 ![](https://github.com/wiiale/AdvancedSwiftThinker/blob/master/T03-CoolUserDefaults/CoolUserDefaults.gif)
 
 Project-04 [KeyPath-KVO](https://github.com/wiiale/AdvancedSwiftThinker/tree/master/T04-KeyPath-KVO)
+
 ![](https://github.com/wiiale/AdvancedSwiftThinker/blob/master/T04-KeyPath-KVO/KVO.gif)
 
