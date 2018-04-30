@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var user = User(name: "Gua Li")
+    
+    /// Just Display current user props
+    @IBOutlet weak var displayLabel: UILabel!
+    
+    var observation: NSKeyValueObservation?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        observation = user.observe(\User.name, writeTo: displayLabel, \UILabel.text!)
+        
+        getUserName { [weak self] in self?.user.name = $0 }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    deinit {
+        observation?.invalidate()
     }
-
-
+    
+    func getUserName(completionHandler: ((String) -> Void)?) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            completionHandler?("Peter Parker")
+        }
+    }
 }
 
