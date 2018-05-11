@@ -1,5 +1,5 @@
 # Advanced Swift Thinker
-Instantiation of a Advanced Swift tips.
+This repository contains some notes with instantiation of Advanced Swift.
 
 # Project & GIF
 Project-01 [Hashable-Footprint](https://github.com/wiiale/AdvancedSwiftThinker/tree/master/T01-Hashable-Footprint)
@@ -17,4 +17,3 @@ Project-03 [CoolUserDefaults](https://github.com/wiiale/AdvancedSwiftThinker/tre
 Project-04 [KeyPath-KVO](https://github.com/wiiale/AdvancedSwiftThinker/tree/master/T04-KeyPath-KVO)
 
 ![](https://github.com/wiiale/AdvancedSwiftThinker/blob/master/T04-KeyPath-KVO/KVO.gif)
-
