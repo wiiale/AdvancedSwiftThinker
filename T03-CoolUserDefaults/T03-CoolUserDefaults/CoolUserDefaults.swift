@@ -25,11 +25,11 @@ final public class UserDefaultsBox<T> {
     }
 }
 
-private let dataKey = "userData"
+private let dataKey = "data"
 
 final public class CoolUserDefaults {
     
-    static let defaults = UserDefaults(suiteName: "cool.user.defaults")!
+    static let defaults = UserDefaults(suiteName: "group.cool.user.defaults")!
     
     /// User Data
     public static var data: UserDefaultsBox<String?> = {
