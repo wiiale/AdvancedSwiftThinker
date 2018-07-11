@@ -1,8 +1,6 @@
 //
-//  AppDelegate.swift
-//  T04-KeyPath-KVO
+//  Created by lili on 2018/7/11.
 //
-//  Created by lili on 2018/4/29.
 //  Copyright © 2018年 fun. All rights reserved.
 //
 
@@ -14,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
