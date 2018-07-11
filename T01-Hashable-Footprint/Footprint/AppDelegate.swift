@@ -1,9 +1,7 @@
 //
-//  AppDelegate.swift
-//  T01-Hashable-Footprint
+//  Created by lili on 2018/7/11.
 //
-//  Created by lili on 2017/12/11.
-//  Copyright © 2017年 fun. All rights reserved.
+//  Copyright © 2018年 fun. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

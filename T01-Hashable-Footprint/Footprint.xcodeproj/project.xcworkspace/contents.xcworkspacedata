@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:T01-Hashable-Footprint.xcodeproj">
+      location = "self:Footprint.xcodeproj">
    </FileRef>
 </Workspace>
