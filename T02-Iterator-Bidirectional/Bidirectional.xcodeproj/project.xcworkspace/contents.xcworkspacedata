@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:T02-Iterator-Bidirectional.xcodeproj">
+      location = "self:Bidirectional.xcodeproj">
    </FileRef>
 </Workspace>
