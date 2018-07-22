@@ -20,15 +20,21 @@ class BidirectionalTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let numbers = [0, 1, 2, 3]
+        var numIterator = numbers.makeBidirectionalIterator()
+        
+        XCTAssertEqual(0, numIterator.next())
+        XCTAssertEqual(1, numIterator.next())
+        XCTAssertEqual(2, numIterator.next())
+        XCTAssertEqual(3, numIterator.next())
+        XCTAssertNil(numIterator.next())
+        XCTAssertNil(numIterator.next())
+        
+        XCTAssertEqual(3, numIterator.previous())
+        XCTAssertEqual(2, numIterator.previous())
+        XCTAssertEqual(1, numIterator.previous())
+        XCTAssertEqual(0, numIterator.previous())
+        XCTAssertNil(numIterator.previous())
+        XCTAssertNil(numIterator.previous())
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

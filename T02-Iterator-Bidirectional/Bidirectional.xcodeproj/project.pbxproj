@@ -13,19 +13,11 @@
 		229167A120F60B2D004605AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229167A020F60B2D004605AE /* Assets.xcassets */; };
 		229167A420F60B2E004605AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229167A220F60B2E004605AE /* LaunchScreen.storyboard */; };
 		229167AF20F60B2E004605AE /* BidirectionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229167AE20F60B2E004605AE /* BidirectionalTests.swift */; };
-		229167BA20F60B2E004605AE /* BidirectionalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229167B920F60B2E004605AE /* BidirectionalUITests.swift */; };
 		229167C820F60B9F004605AE /* BidirectionalIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229167C720F60B9F004605AE /* BidirectionalIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		229167AB20F60B2E004605AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2291678E20F60B2D004605AE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2291679520F60B2D004605AE;
-			remoteInfo = Bidirectional;
-		};
-		229167B620F60B2E004605AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2291678E20F60B2D004605AE /* Project object */;
 			proxyType = 1;
@@ -45,9 +37,6 @@
 		229167AA20F60B2E004605AE /* BidirectionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BidirectionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		229167AE20F60B2E004605AE /* BidirectionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalTests.swift; sourceTree = "<group>"; };
 		229167B020F60B2E004605AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		229167B520F60B2E004605AE /* BidirectionalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BidirectionalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		229167B920F60B2E004605AE /* BidirectionalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalUITests.swift; sourceTree = "<group>"; };
-		229167BB20F60B2E004605AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		229167C720F60B9F004605AE /* BidirectionalIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BidirectionalIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,13 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		229167B220F60B2E004605AE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +63,6 @@
 			children = (
 				2291679820F60B2D004605AE /* Bidirectional */,
 				229167AD20F60B2E004605AE /* BidirectionalTests */,
-				229167B820F60B2E004605AE /* BidirectionalUITests */,
 				2291679720F60B2D004605AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +72,6 @@
 			children = (
 				2291679620F60B2D004605AE /* Bidirectional.app */,
 				229167AA20F60B2E004605AE /* BidirectionalTests.xctest */,
-				229167B520F60B2E004605AE /* BidirectionalUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,15 +97,6 @@
 				229167B020F60B2E004605AE /* Info.plist */,
 			);
 			path = BidirectionalTests;
-			sourceTree = "<group>";
-		};
-		229167B820F60B2E004605AE /* BidirectionalUITests */ = {
-			isa = PBXGroup;
-			children = (
-				229167B920F60B2E004605AE /* BidirectionalUITests.swift */,
-				229167BB20F60B2E004605AE /* Info.plist */,
-			);
-			path = BidirectionalUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +137,6 @@
 			productReference = 229167AA20F60B2E004605AE /* BidirectionalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		229167B420F60B2E004605AE /* BidirectionalUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 229167C420F60B2E004605AE /* Build configuration list for PBXNativeTarget "BidirectionalUITests" */;
-			buildPhases = (
-				229167B120F60B2E004605AE /* Sources */,
-				229167B220F60B2E004605AE /* Frameworks */,
-				229167B320F60B2E004605AE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				229167B720F60B2E004605AE /* PBXTargetDependency */,
-			);
-			name = BidirectionalUITests;
-			productName = BidirectionalUITests;
-			productReference = 229167B520F60B2E004605AE /* BidirectionalUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,10 +151,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					229167A920F60B2E004605AE = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 2291679520F60B2D004605AE;
-					};
-					229167B420F60B2E004605AE = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 2291679520F60B2D004605AE;
 					};
@@ -222,7 +171,6 @@
 			targets = (
 				2291679520F60B2D004605AE /* Bidirectional */,
 				229167A920F60B2E004605AE /* BidirectionalTests */,
-				229167B420F60B2E004605AE /* BidirectionalUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,13 +187,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		229167A820F60B2E004605AE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		229167B320F60B2E004605AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,14 +214,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		229167B120F60B2E004605AE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				229167BA20F60B2E004605AE /* BidirectionalUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +221,6 @@
 			isa = PBXTargetDependency;
 			target = 2291679520F60B2D004605AE /* Bidirectional */;
 			targetProxy = 229167AB20F60B2E004605AE /* PBXContainerItemProxy */;
-		};
-		229167B720F60B2E004605AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2291679520F60B2D004605AE /* Bidirectional */;
-			targetProxy = 229167B620F60B2E004605AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,44 +432,6 @@
 			};
 			name = Release;
 		};
-		229167C520F60B2E004605AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BidirectionalUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fun.BidirectionalUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Bidirectional;
-			};
-			name = Debug;
-		};
-		229167C620F60B2E004605AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BidirectionalUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fun.BidirectionalUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Bidirectional;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,15 +458,6 @@
 			buildConfigurations = (
 				229167C220F60B2E004605AE /* Debug */,
 				229167C320F60B2E004605AE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		229167C420F60B2E004605AE /* Build configuration list for PBXNativeTarget "BidirectionalUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				229167C520F60B2E004605AE /* Debug */,
-				229167C620F60B2E004605AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
