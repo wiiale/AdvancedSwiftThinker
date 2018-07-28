@@ -12,7 +12,6 @@
 		2291672320F605F1004605AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2291672220F605F1004605AE /* Assets.xcassets */; };
 		2291672620F605F1004605AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2291672420F605F1004605AE /* LaunchScreen.storyboard */; };
 		2291673120F605F1004605AE /* FootprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291673020F605F1004605AE /* FootprintTests.swift */; };
-		2291673C20F605F1004605AE /* FootprintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291673B20F605F1004605AE /* FootprintUITests.swift */; };
 		2291674E20F6063E004605AE /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291674920F6063E004605AE /* TableViewDataSource.swift */; };
 		2291674F20F6063E004605AE /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291674A20F6063E004605AE /* Store.swift */; };
 		2291675020F6063E004605AE /* TableCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291674B20F6063E004605AE /* TableCityCell.swift */; };
@@ -22,13 +21,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		2291672D20F605F1004605AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2291671020F605EF004605AE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2291671720F605EF004605AE;
-			remoteInfo = Footprint;
-		};
-		2291673820F605F1004605AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2291671020F605EF004605AE /* Project object */;
 			proxyType = 1;
@@ -47,9 +39,6 @@
 		2291672C20F605F1004605AE /* FootprintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootprintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2291673020F605F1004605AE /* FootprintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintTests.swift; sourceTree = "<group>"; };
 		2291673220F605F1004605AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2291673720F605F1004605AE /* FootprintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootprintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2291673B20F605F1004605AE /* FootprintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintUITests.swift; sourceTree = "<group>"; };
-		2291673D20F605F1004605AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2291674920F6063E004605AE /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		2291674A20F6063E004605AE /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		2291674B20F6063E004605AE /* TableCityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCityCell.swift; sourceTree = "<group>"; };
@@ -72,13 +61,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2291673420F605F1004605AE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +69,6 @@
 			children = (
 				2291671A20F605EF004605AE /* Footprint */,
 				2291672F20F605F1004605AE /* FootprintTests */,
-				2291673A20F605F1004605AE /* FootprintUITests */,
 				2291671920F605EF004605AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +78,6 @@
 			children = (
 				2291671820F605EF004605AE /* Footprint.app */,
 				2291672C20F605F1004605AE /* FootprintTests.xctest */,
-				2291673720F605F1004605AE /* FootprintUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,15 +106,6 @@
 				2291673220F605F1004605AE /* Info.plist */,
 			);
 			path = FootprintTests;
-			sourceTree = "<group>";
-		};
-		2291673A20F605F1004605AE /* FootprintUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2291673B20F605F1004605AE /* FootprintUITests.swift */,
-				2291673D20F605F1004605AE /* Info.plist */,
-			);
-			path = FootprintUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,24 +146,6 @@
 			productReference = 2291672C20F605F1004605AE /* FootprintTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2291673620F605F1004605AE /* FootprintUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2291674620F605F1004605AE /* Build configuration list for PBXNativeTarget "FootprintUITests" */;
-			buildPhases = (
-				2291673320F605F1004605AE /* Sources */,
-				2291673420F605F1004605AE /* Frameworks */,
-				2291673520F605F1004605AE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2291673920F605F1004605AE /* PBXTargetDependency */,
-			);
-			name = FootprintUITests;
-			productName = FootprintUITests;
-			productReference = 2291673720F605F1004605AE /* FootprintUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,10 +160,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					2291672B20F605F1004605AE = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 2291671720F605EF004605AE;
-					};
-					2291673620F605F1004605AE = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 2291671720F605EF004605AE;
 					};
@@ -231,7 +180,6 @@
 			targets = (
 				2291671720F605EF004605AE /* Footprint */,
 				2291672B20F605F1004605AE /* FootprintTests */,
-				2291673620F605F1004605AE /* FootprintUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,13 +196,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2291672A20F605F1004605AE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2291673520F605F1004605AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,14 +226,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2291673320F605F1004605AE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2291673C20F605F1004605AE /* FootprintUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -300,11 +233,6 @@
 			isa = PBXTargetDependency;
 			target = 2291671720F605EF004605AE /* Footprint */;
 			targetProxy = 2291672D20F605F1004605AE /* PBXContainerItemProxy */;
-		};
-		2291673920F605F1004605AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2291671720F605EF004605AE /* Footprint */;
-			targetProxy = 2291673820F605F1004605AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,44 +444,6 @@
 			};
 			name = Release;
 		};
-		2291674720F605F1004605AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FootprintUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fun.FootprintUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Footprint;
-			};
-			name = Debug;
-		};
-		2291674820F605F1004605AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FootprintUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fun.FootprintUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Footprint;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -580,15 +470,6 @@
 			buildConfigurations = (
 				2291674420F605F1004605AE /* Debug */,
 				2291674520F605F1004605AE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2291674620F605F1004605AE /* Build configuration list for PBXNativeTarget "FootprintUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2291674720F605F1004605AE /* Debug */,
-				2291674820F605F1004605AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
