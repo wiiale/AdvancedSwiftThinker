@@ -13,19 +13,11 @@
 		22938E2920F60D2300D0EB7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22938E2820F60D2300D0EB7A /* Assets.xcassets */; };
 		22938E2C20F60D2300D0EB7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22938E2A20F60D2300D0EB7A /* LaunchScreen.storyboard */; };
 		22938E3720F60D2300D0EB7A /* CoolUserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22938E3620F60D2300D0EB7A /* CoolUserDefaultsTests.swift */; };
-		22938E4220F60D2300D0EB7A /* CoolUserDefaultsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22938E4120F60D2300D0EB7A /* CoolUserDefaultsUITests.swift */; };
 		22938E5020F60D4C00D0EB7A /* CoolUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22938E4F20F60D4B00D0EB7A /* CoolUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		22938E3320F60D2300D0EB7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22938E1620F60D2100D0EB7A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22938E1D20F60D2100D0EB7A;
-			remoteInfo = CoolUserDefaults;
-		};
-		22938E3E20F60D2300D0EB7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22938E1620F60D2100D0EB7A /* Project object */;
 			proxyType = 1;
@@ -45,9 +37,6 @@
 		22938E3220F60D2300D0EB7A /* CoolUserDefaultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolUserDefaultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22938E3620F60D2300D0EB7A /* CoolUserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolUserDefaultsTests.swift; sourceTree = "<group>"; };
 		22938E3820F60D2300D0EB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22938E3D20F60D2300D0EB7A /* CoolUserDefaultsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolUserDefaultsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22938E4120F60D2300D0EB7A /* CoolUserDefaultsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolUserDefaultsUITests.swift; sourceTree = "<group>"; };
-		22938E4320F60D2300D0EB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22938E4F20F60D4B00D0EB7A /* CoolUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,13 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22938E3A20F60D2300D0EB7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +63,6 @@
 			children = (
 				22938E2020F60D2100D0EB7A /* CoolUserDefaults */,
 				22938E3520F60D2300D0EB7A /* CoolUserDefaultsTests */,
-				22938E4020F60D2300D0EB7A /* CoolUserDefaultsUITests */,
 				22938E1F20F60D2100D0EB7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +72,6 @@
 			children = (
 				22938E1E20F60D2100D0EB7A /* CoolUserDefaults.app */,
 				22938E3220F60D2300D0EB7A /* CoolUserDefaultsTests.xctest */,
-				22938E3D20F60D2300D0EB7A /* CoolUserDefaultsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,15 +97,6 @@
 				22938E3820F60D2300D0EB7A /* Info.plist */,
 			);
 			path = CoolUserDefaultsTests;
-			sourceTree = "<group>";
-		};
-		22938E4020F60D2300D0EB7A /* CoolUserDefaultsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				22938E4120F60D2300D0EB7A /* CoolUserDefaultsUITests.swift */,
-				22938E4320F60D2300D0EB7A /* Info.plist */,
-			);
-			path = CoolUserDefaultsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +137,6 @@
 			productReference = 22938E3220F60D2300D0EB7A /* CoolUserDefaultsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		22938E3C20F60D2300D0EB7A /* CoolUserDefaultsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22938E4C20F60D2400D0EB7A /* Build configuration list for PBXNativeTarget "CoolUserDefaultsUITests" */;
-			buildPhases = (
-				22938E3920F60D2300D0EB7A /* Sources */,
-				22938E3A20F60D2300D0EB7A /* Frameworks */,
-				22938E3B20F60D2300D0EB7A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22938E3F20F60D2300D0EB7A /* PBXTargetDependency */,
-			);
-			name = CoolUserDefaultsUITests;
-			productName = CoolUserDefaultsUITests;
-			productReference = 22938E3D20F60D2300D0EB7A /* CoolUserDefaultsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,10 +151,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					22938E3120F60D2300D0EB7A = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 22938E1D20F60D2100D0EB7A;
-					};
-					22938E3C20F60D2300D0EB7A = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 22938E1D20F60D2100D0EB7A;
 					};
@@ -222,7 +171,6 @@
 			targets = (
 				22938E1D20F60D2100D0EB7A /* CoolUserDefaults */,
 				22938E3120F60D2300D0EB7A /* CoolUserDefaultsTests */,
-				22938E3C20F60D2300D0EB7A /* CoolUserDefaultsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,13 +187,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		22938E3020F60D2300D0EB7A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22938E3B20F60D2300D0EB7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,14 +214,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22938E3920F60D2300D0EB7A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22938E4220F60D2300D0EB7A /* CoolUserDefaultsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +221,6 @@
 			isa = PBXTargetDependency;
 			target = 22938E1D20F60D2100D0EB7A /* CoolUserDefaults */;
 			targetProxy = 22938E3320F60D2300D0EB7A /* PBXContainerItemProxy */;
-		};
-		22938E3F20F60D2300D0EB7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22938E1D20F60D2100D0EB7A /* CoolUserDefaults */;
-			targetProxy = 22938E3E20F60D2300D0EB7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,44 +432,6 @@
 			};
 			name = Release;
 		};
-		22938E4D20F60D2400D0EB7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CoolUserDefaultsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fun.CoolUserDefaultsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CoolUserDefaults;
-			};
-			name = Debug;
-		};
-		22938E4E20F60D2400D0EB7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CoolUserDefaultsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fun.CoolUserDefaultsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CoolUserDefaults;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,15 +458,6 @@
 			buildConfigurations = (
 				22938E4A20F60D2400D0EB7A /* Debug */,
 				22938E4B20F60D2400D0EB7A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22938E4C20F60D2400D0EB7A /* Build configuration list for PBXNativeTarget "CoolUserDefaultsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22938E4D20F60D2400D0EB7A /* Debug */,
-				22938E4E20F60D2400D0EB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
