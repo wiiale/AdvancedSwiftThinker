@@ -20,15 +20,20 @@ class KeyPathKVOTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let user = User(name: "Gua Li")
+        let test = TestObj()
+        
+        XCTAssertNotEqual(user.name, test.text)
+        
+        let observation = user.observe(\User.name, writeTo: test, \TestObj.text)
+        user.name = "1"
+        XCTAssertEqual(test.text, "1")
+        
+        observation.invalidate()
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+}
+
+class TestObj: NSObject {
+    var text: String = ""
 }

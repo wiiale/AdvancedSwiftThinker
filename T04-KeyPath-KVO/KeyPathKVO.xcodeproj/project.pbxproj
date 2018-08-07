@@ -13,20 +13,12 @@
 		22938E6520F60E4500D0EB7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22938E6420F60E4500D0EB7A /* Assets.xcassets */; };
 		22938E6820F60E4500D0EB7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22938E6620F60E4500D0EB7A /* LaunchScreen.storyboard */; };
 		22938E7320F60E4500D0EB7A /* KeyPathKVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22938E7220F60E4500D0EB7A /* KeyPathKVOTests.swift */; };
-		22938E7E20F60E4500D0EB7A /* KeyPathKVOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22938E7D20F60E4500D0EB7A /* KeyPathKVOUITests.swift */; };
 		22938E8D20F60EAC00D0EB7A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22938E8B20F60EAC00D0EB7A /* User.swift */; };
 		22938E8E20F60EAC00D0EB7A /* NSObjectProtocol+Thinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22938E8C20F60EAC00D0EB7A /* NSObjectProtocol+Thinker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		22938E6F20F60E4500D0EB7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22938E5220F60E4400D0EB7A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22938E5920F60E4400D0EB7A;
-			remoteInfo = KeyPathKVO;
-		};
-		22938E7A20F60E4500D0EB7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22938E5220F60E4400D0EB7A /* Project object */;
 			proxyType = 1;
@@ -46,9 +38,6 @@
 		22938E6E20F60E4500D0EB7A /* KeyPathKVOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyPathKVOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22938E7220F60E4500D0EB7A /* KeyPathKVOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathKVOTests.swift; sourceTree = "<group>"; };
 		22938E7420F60E4500D0EB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22938E7920F60E4500D0EB7A /* KeyPathKVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyPathKVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22938E7D20F60E4500D0EB7A /* KeyPathKVOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathKVOUITests.swift; sourceTree = "<group>"; };
-		22938E7F20F60E4500D0EB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22938E8B20F60EAC00D0EB7A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		22938E8C20F60EAC00D0EB7A /* NSObjectProtocol+Thinker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObjectProtocol+Thinker.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,13 +57,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22938E7620F60E4500D0EB7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +65,6 @@
 			children = (
 				22938E5C20F60E4400D0EB7A /* KeyPathKVO */,
 				22938E7120F60E4500D0EB7A /* KeyPathKVOTests */,
-				22938E7C20F60E4500D0EB7A /* KeyPathKVOUITests */,
 				22938E5B20F60E4400D0EB7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,7 +74,6 @@
 			children = (
 				22938E5A20F60E4400D0EB7A /* KeyPathKVO.app */,
 				22938E6E20F60E4500D0EB7A /* KeyPathKVOTests.xctest */,
-				22938E7920F60E4500D0EB7A /* KeyPathKVOUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,15 +100,6 @@
 				22938E7420F60E4500D0EB7A /* Info.plist */,
 			);
 			path = KeyPathKVOTests;
-			sourceTree = "<group>";
-		};
-		22938E7C20F60E4500D0EB7A /* KeyPathKVOUITests */ = {
-			isa = PBXGroup;
-			children = (
-				22938E7D20F60E4500D0EB7A /* KeyPathKVOUITests.swift */,
-				22938E7F20F60E4500D0EB7A /* Info.plist */,
-			);
-			path = KeyPathKVOUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,24 +140,6 @@
 			productReference = 22938E6E20F60E4500D0EB7A /* KeyPathKVOTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		22938E7820F60E4500D0EB7A /* KeyPathKVOUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22938E8820F60E4500D0EB7A /* Build configuration list for PBXNativeTarget "KeyPathKVOUITests" */;
-			buildPhases = (
-				22938E7520F60E4500D0EB7A /* Sources */,
-				22938E7620F60E4500D0EB7A /* Frameworks */,
-				22938E7720F60E4500D0EB7A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22938E7B20F60E4500D0EB7A /* PBXTargetDependency */,
-			);
-			name = KeyPathKVOUITests;
-			productName = KeyPathKVOUITests;
-			productReference = 22938E7920F60E4500D0EB7A /* KeyPathKVOUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,10 +154,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					22938E6D20F60E4500D0EB7A = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 22938E5920F60E4400D0EB7A;
-					};
-					22938E7820F60E4500D0EB7A = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 22938E5920F60E4400D0EB7A;
 					};
@@ -225,7 +174,6 @@
 			targets = (
 				22938E5920F60E4400D0EB7A /* KeyPathKVO */,
 				22938E6D20F60E4500D0EB7A /* KeyPathKVOTests */,
-				22938E7820F60E4500D0EB7A /* KeyPathKVOUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,13 +190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		22938E6C20F60E4500D0EB7A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22938E7720F60E4500D0EB7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,14 +218,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22938E7520F60E4500D0EB7A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22938E7E20F60E4500D0EB7A /* KeyPathKVOUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,11 +225,6 @@
 			isa = PBXTargetDependency;
 			target = 22938E5920F60E4400D0EB7A /* KeyPathKVO */;
 			targetProxy = 22938E6F20F60E4500D0EB7A /* PBXContainerItemProxy */;
-		};
-		22938E7B20F60E4500D0EB7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22938E5920F60E4400D0EB7A /* KeyPathKVO */;
-			targetProxy = 22938E7A20F60E4500D0EB7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -508,44 +436,6 @@
 			};
 			name = Release;
 		};
-		22938E8920F60E4500D0EB7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KeyPathKVOUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fun.KeyPathKVOUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KeyPathKVO;
-			};
-			name = Debug;
-		};
-		22938E8A20F60E4500D0EB7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KeyPathKVOUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fun.KeyPathKVOUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KeyPathKVO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,15 +462,6 @@
 			buildConfigurations = (
 				22938E8620F60E4500D0EB7A /* Debug */,
 				22938E8720F60E4500D0EB7A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22938E8820F60E4500D0EB7A /* Build configuration list for PBXNativeTarget "KeyPathKVOUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22938E8920F60E4500D0EB7A /* Debug */,
-				22938E8A20F60E4500D0EB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
