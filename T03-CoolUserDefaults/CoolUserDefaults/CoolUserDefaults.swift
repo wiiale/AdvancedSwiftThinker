@@ -25,18 +25,16 @@ final public class UserDefaultsBox<T> {
     }
 }
 
-private let dataKey = "data"
-
 final public class CoolUserDefaults {
     
     static let defaults = UserDefaults(suiteName: "group.cool.user.defaults")!
     
     /// User Data
     public static var data: UserDefaultsBox<String?> = {
-        let data = defaults.string(forKey: dataKey)
+        let data = defaults.string(forKey: #function)
         
         return UserDefaultsBox<String?>(data) { data in
-            defaults.set(data, forKey: dataKey)
+            defaults.set(data, forKey: #function)
         }
     }()
     
